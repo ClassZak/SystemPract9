@@ -23,7 +23,8 @@ namespace SystemPract9
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.textBox3.Text = textBox1.Text + textBox2.Text;
+            textBox3.Text = textBox1.Text + textBox2.Text;
+            ResultSaver.SaveResult(textBox3.Text);
         }
     }
 }

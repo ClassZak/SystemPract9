@@ -10,15 +10,6 @@ namespace SystemPract9
     class Logger
     {
         static UInt64 ButtonClicks = 0, TextChanges = 0;
-        protected byte[] stringToBytes(string str)
-        {
-            byte[] bytes = new byte[str.Length / 2];
-
-            for (int i = 0; i != str.Length; i += 2)
-                bytes[i / 2] = (byte)str[i];
-            return bytes;
-        }
-
         static bool AppRunning;
         static public bool LogFileExists(string path, string desiredName)
         {
