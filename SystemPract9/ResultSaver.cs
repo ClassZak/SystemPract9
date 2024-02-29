@@ -49,6 +49,7 @@ namespace SystemPract9
                 if (!directoryInfo.Exists)
                 {
                     MessageBox.Show("Директория для результатов не найдена", "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Создаётся директория", "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     directoryInfo.Create();
                 }
                     
